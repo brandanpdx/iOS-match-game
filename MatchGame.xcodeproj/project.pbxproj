@@ -62,11 +62,11 @@
 		2A173E87245D5CA400FD3C05 /* MatchGame */ = {
 			isa = PBXGroup;
 			children = (
+				2A173EA3245DE72A00FD3C05 /* Models */,
+				2A173EA2245DE71600FD3C05 /* View Controllers */,
 				2A173E88245D5CA400FD3C05 /* AppDelegate.swift */,
 				2A173E8A245D5CA400FD3C05 /* SceneDelegate.swift */,
-				2A173E8C245D5CA400FD3C05 /* ViewController.swift */,
 				2A173E9E245DBB6600FD3C05 /* Card.swift */,
-				2A173E9C245DBA9400FD3C05 /* CardModel.swift */,
 				2A173E8E245D5CA400FD3C05 /* Main.storyboard */,
 				2A173E91245D5CA500FD3C05 /* Assets.xcassets */,
 				2A173E93245D5CA500FD3C05 /* LaunchScreen.storyboard */,
@@ -74,6 +74,22 @@
 				2A173EA0245DD28C00FD3C05 /* CardCollectionViewCell.swift */,
 			);
 			path = MatchGame;
+			sourceTree = "<group>";
+		};
+		2A173EA2245DE71600FD3C05 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A173E8C245D5CA400FD3C05 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		2A173EA3245DE72A00FD3C05 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2A173E9C245DBA9400FD3C05 /* CardModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
