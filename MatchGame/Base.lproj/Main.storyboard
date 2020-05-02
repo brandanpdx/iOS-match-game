@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_5" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -16,12 +16,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EpP-Ki-Kmr">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Lzb-fG-F9f">
                                 <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                             </imageView>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Gjt-JR-zS7">
                                 <rect key="frame" x="44" y="0.0" width="808" height="393"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="kpb-X1-UG7">
                                     <size key="itemSize" width="158" height="224"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -64,21 +64,24 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="EpP-Ki-Kmr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="0R8-Io-iea"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Gjt-JR-zS7" secondAttribute="bottom" id="88B-db-aEC"/>
-                            <constraint firstAttribute="bottom" secondItem="EpP-Ki-Kmr" secondAttribute="bottom" id="Iar-GW-GtK"/>
+                            <constraint firstAttribute="trailing" secondItem="Lzb-fG-F9f" secondAttribute="trailing" id="Bqk-wh-cB7"/>
+                            <constraint firstItem="Lzb-fG-F9f" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Fn4-12-Zvz"/>
+                            <constraint firstItem="Lzb-fG-F9f" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Hcz-x6-nhP"/>
                             <constraint firstItem="Gjt-JR-zS7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Yxd-Uv-mEP"/>
-                            <constraint firstItem="EpP-Ki-Kmr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ahB-jz-Qzs"/>
-                            <constraint firstAttribute="trailing" secondItem="EpP-Ki-Kmr" secondAttribute="trailing" id="fT0-jG-B91"/>
+                            <constraint firstAttribute="bottom" secondItem="Lzb-fG-F9f" secondAttribute="bottom" id="hxP-J6-Pnj"/>
                             <constraint firstItem="Gjt-JR-zS7" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="on9-nr-uf2"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Gjt-JR-zS7" secondAttribute="trailing" id="yzk-xf-0TH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="collectionView" destination="Gjt-JR-zS7" id="e93-UV-Mef"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="139"/>
+            <point key="canvasLocation" x="131.91964285714286" y="137.68115942028987"/>
         </scene>
     </scenes>
     <resources>
