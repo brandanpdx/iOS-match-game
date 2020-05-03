@@ -31,17 +31,40 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
     // MARK: - Collcetion View Delegate Methods
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 16
+        //Return number of cards
+        return cardsArray.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         //Get a cell
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath)
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "CardCell", for: indexPath) as! CardCollectionViewCell
         
-        // TODO: Finish configuring the cell
+        // Get the card from the card array
+        let card = cardsArray[indexPath.row]
+        
+        // Finish configuring the cell
+        cell.configureCell(card: card)
+        
         
         //Return the cell
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        // Get reference to cell
+        let cell = collectionView.cellForItem(at: indexPath) as? CardCollectionViewCell
+        
+        // Check status of the cell to determine if we can flip it
+        if cell?.card?.isFlipped == false {
+            cell?.flipUp()
+        }
+        else {
+            cell?.flipDown()
+        }
+        
+        // Flip card up
+        cell?.flipUp()
+        
     }
 }
 
