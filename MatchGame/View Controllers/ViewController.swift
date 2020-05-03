@@ -62,9 +62,6 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
             cell?.flipDown()
         }
         
-        // Flip card up
-        cell?.flipUp()
-        
     }
 }
 
