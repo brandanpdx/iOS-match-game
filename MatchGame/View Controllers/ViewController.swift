@@ -109,6 +109,8 @@ class ViewController: UIViewController, UICollectionViewDataSource, UICollection
         }
         else {
             //It's not a match
+            cardOne.isFlipped = false
+            cardTwo.isFlipped = false
             
             //Flip back over
             cardOneCell?.flipDown()
